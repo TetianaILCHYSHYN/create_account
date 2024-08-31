@@ -7,6 +7,11 @@
   <title>Create_Account</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Farro:wght@300&family=Francois+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
@@ -26,7 +31,7 @@
         <span class="profile">Profile</span>
       </div>
     </header>
-    
+
     <div class="container" id="account">
       <h2>Create an Account</h2>
       <div class="boxname">
@@ -39,42 +44,113 @@
           <input type="text" id="lastname" name="lastname" required>
         </li>
       </div>
-      
+
       <div class="box">
         <label for="email">E-mail</label>
         <input type="text1" id="email" name="email" required>
         <p>We'll never share your email with anyone else.</p>
-        
+
       </div>
+
       <div class="gender">
-        
-        <label for="male"><input type="radio" id="male" name="gender" value="male" >Male</label>
-        
-        <label for="female"><input type="radio" id="female" name="gender" value="female" >Female</label>
+
+        <label for="male"><input type="radio" id="male" name="gender" value="male">
+          <span class="fem">Male</span>
+        </label>
+
+        <label for="female"><input type="radio" id="female" name="gender" value="female">
+          <span class="fem">Female</span>
+        </label>
+
       </div>
-      
+
       <div class="boxname">
         <li>
-          <label for="country">Country</label>
-          <input type="text" id="country" name="country" required>
+          <label for="Country">Country
+          </label>
+          <select id="Country" name="Country" required>
+            <option value="">Select</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Poland">Poland</option>
+            <option value="England">England</option>
+            <option value="Germany">Germany</option>
+          </select>
         </li>
         <li>
           <label for="city">City</label>
           <input type="text" id="city" name="city" required>
         </li>
       </div>
-      <br>
       <input type="text1" id="SignUp" name="SignUp" value="Sign Up" required>
+
+      <p>By clicking the 'Sign Up' button, you confirm that you accept our</p>
+      <p>
+        <a href="">Terms of Use</a>
+        and
+        <a href="">Privacy Policy </a>.</p>
+      <hr>
+      <div class="ah">
+        Have an account?
+        <a href="">Log In</a>
+      </div>
     </div>
+
+
+
     <div class="container" id="profile">
       <h2>Profile</h2>
-      <img src="Image.svg" alt="photo">
-      <label for="Name">Name</label>
-      <label for="E-mail">E-mail</label>
-      <label for="Country">Country</label>
-      <label for="City">City</label>
-      <label for="Zip Code">Zip Code</label>
-      <label for="Phone Number">Phone Number</label>
+
+      <div class="boxbutton">
+        <img src="Image.svg" alt="photo">
+
+        <div class="photocamera">
+          <button class="photocamera"></button>
+          <p>Up to 1 MB (300x300 px)</p>
+        </div>
+
+        <button class="trash"></button>
+      </div>
+
+      <div class="boxname">
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </li>
+
+        <li>
+          <label for="E-mail">E-mail</label>
+          <input type="text" id="E-mail" name="E-mail" required>
+        </li>
+
+        <li>
+          <label for="Country">Country</label>
+
+          <select id="Country" name="Country" required>
+            <option value="">Select</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Poland">Poland</option>
+            <option value="England">England</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </li>
+
+        <li>
+          <label for="City">City</label>
+          <input type="text" id="City" name="City" required>
+        </li>
+
+        <li>
+          <label for="ZipCode">Zip Code</label>
+          <input type="text" id="ZipCode" name="ZipCode" required>
+        </li>
+
+        <li>
+          <label for="PhoneNumber">Phone Number</label>
+          <input type="text" id="PhoneNumber" name="PhoneNumber" required>
+        </li>
+      </div>
+      <input type="text1" id="Update" name="Update" value="Update" required>
+
     </div>
   </main>
 </body>

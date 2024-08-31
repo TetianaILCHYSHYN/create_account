@@ -20,7 +20,6 @@ header {
   font-size: 20px;
 }
 
-
 main {
   display: block;
   margin: auto;
@@ -51,9 +50,22 @@ header span {
   height: 590px;
   margin: auto;
   background-color: #FFFFFF;
+  border: 2mp;
+
+}
+
+.boxbutton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trash {
+  margin-left: -10px;
 }
 
 h2 {
+  margin-right: 315px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -61,16 +73,22 @@ h2 {
   color: #1C1C1C;
 }
 
-p {
-  font-size: 13px;
+#profile h2 {
+  margin-right: 450px;
 }
 
+p {
+  font-size: 13px;
+  color: #969696;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .boxname {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
- justify-content: center;
+  justify-content: center;
 }
 
 li {
@@ -78,25 +96,130 @@ li {
   display: flex;
   flex-direction: column;
 }
- .box {
+
+.box {
   display: flex;
   flex-direction: column;
- }
+  margin-bottom: 20px;
+}
 
-input {
- 
-  /*padding: 0;
-  border: 0;*/
+input,
+select {
+
+
   height: 38px;
   width: 245px;
-  border-radius: 7px;
+  border-radius: 6px;
   border-color: #E4E4E4;
   border-width: 2px;
   border-style: solid;
-
+  margin-bottom: 20px;
+  margin-top: 0;
+  cursor: pointer;
 }
 
-#SignUp {
+#Country {
+  width: 252px;
+  height: 43.5px;
+  color: #BABABA;
+  font-family: "Inter", 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.box input {
+  margin-bottom: 5px;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+.gender {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-right: 420px;
+  gap: 50px;
+}
+
+hr {
+  width: 500px;
+  height: 1px;
+  color: #E4E4E4;
+  margin-top: 19px;
+  margin-bottom: 12px;
+  opacity: 50%;
+}
+
+.gender input {
+  height: 20px;
+  width: 20px;
+}
+
+/*
+.gender input[type="radio"] {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.gender input[type="radio"]::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(◼️\ Background.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.gender input[type="radio"]:checked + input[type="radio"]::before {
+  background-image:  url(Oval.svg) no-repeat center center;
+  background-size: contain;
+}
+input#female::after {
+  background-image: url(Oval.svg);
+}
+*/
+
+.fem {
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 3px;
+}
+
+
+select:hover,
+select:checked+label,
+input:hover,
+input:checked+label {
+
+  border-color: #9747FF;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+select:active,
+input:active {
+  background-color: #007BFF;
+}
+
+select {
+  appearance: none;
+  background-image: url(🔹\ Icon\ Color.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 95%;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+#SignUp,
+#Update {
   text-align: center;
   font-weight: 500;
   color: #FFFFFF;
@@ -104,8 +227,13 @@ input {
   font-size: 15px;
 }
 
-#email, #SignUp {
-  width: 510px ;
+#Update {
+  margin-right: 265px;
+}
+
+#email,
+#SignUp {
+  width: 510px;
 }
 
 img {
@@ -113,4 +241,65 @@ img {
   height: 80px;
 }
 
+.photocamera,
+.trash {
+  border-radius: 6px;
+  border-color: #E4E4E4;
+  border-width: 2px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity: 80%;
+  cursor: pointer;
+}
 
+.photocamera {
+  width: 145px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-image: url(Photo\ Camera.svg);
+  background-position-x: 95%;
+}
+
+.trash {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-image: url(Small.svg);
+  opacity: 70%;
+}
+
+
+p a {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #007BFF;
+  padding-left: 7px;
+  padding-right: 7px;
+
+}
+
+.ah {
+  display: block;
+}
+
+a {
+  font-weight: 700;
+  color: #007BFF;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+select img {
+  width: 18px;
+  height: 18px;
+
+}
+
+.boxbutton {
+
+  margin-right: 240px;
+  padding-bottom: 20px;
+}
